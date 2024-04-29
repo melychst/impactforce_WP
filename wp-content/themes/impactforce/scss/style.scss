@@ -1,0 +1,1202 @@
+@import '_general';
+@import '_global_wars';
+
+@include font-face('e-Ukr-Regular', '../fonts/e-UkraineHead-Regular');
+@include font-face('e-Ukr-Medium', '../fonts/e-UkraineHead-Medium');
+@include font-face('e-Ukr-Bold', '../fonts/e-UkraineHead-Bold');
+@include font-face('e-Ukr-Thin', '../fonts/e-UkraineHead-Thin');
+
+body {
+    color: #003548;
+    font-family: "e-Ukr-Regular" !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px; /* 143.75% */
+    letter-spacing: 0.48px;
+    main {
+       overflow: hidden; 
+       position: relative;
+       &::before {
+        @include after-content(100%, 845px);
+        background-image: url(../images/footer-bg.png);
+        background-size: cover;
+        bottom: 0px;
+        left: 0px;
+        z-index: -1;
+    }
+    }
+    .dots-wrap {
+        &.dots-g {
+            svg {
+                //transform: rotate(90deg);
+            }
+        }
+    }
+    header {
+        position: absolute;
+        width: 1270px;
+        // height: 80px;
+        margin: 0 auto;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-top: 7px;
+        @include media($xxl){
+            width: 1022px;
+        }
+        @include media($xl){
+            width: 768px;
+            height: 35px;
+            padding-top: 14px;
+        }
+        .columns {
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            @include media($xl){
+                height: 35px;
+            }
+            .left-column {
+                @include media($xl){
+                    width: 58px;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .center-column {
+                padding-left: 40px;
+                @include media($xxl){
+                    padding-left: 20px;
+                }
+            }
+        }
+        .main-navigation {
+            padding-top: 17px;
+            @include media($xl){
+                padding-top: 9px;
+            }
+            ul {
+                border-radius: 59px;
+                border: 0.5px solid #00B0EB;
+                background: #FFF;
+                height: 34px;
+                display: flex;
+                align-items: center;
+                padding: 0px 30px;
+                @include media($xxl){
+                    padding: 0px 10px;
+                    height: 20px;
+                }
+                @include media($xl){
+                    padding: 0px 27px;
+                }
+                li {
+                    list-style: none;
+                    padding: 8px 30px 7px;
+                    @include media($xxl){
+                        padding: 8px 15px 7px;
+                    }
+                    @include media($xl){
+                        padding: 4px 12px 4px;
+                        display: flex;
+                        align-items: center;
+                    }
+                    a {
+                        color: #00B0EB;
+                        font-family: "Dela Gothic One";
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.52px;
+                        text-transform: uppercase;
+                        @include media($xl){
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        .right-navigation {
+            padding-top: 18px;
+            @include media($xl){
+                padding-top: 8px;
+            }
+            a {
+                color: #00B0EB;
+                font-family: "Dela Gothic One";
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.48px;
+                text-transform: uppercase;
+                @include media($xl){
+                    font-size: 7px;
+                    letter-spacing: 0.2px;
+                }
+            }
+            span {
+                display: block;
+                position: relative;
+                top: -5px;
+            }
+            .column-wrap {
+                &:first-child {
+                    margin-right: 35px;
+                    @include media($xl){
+                        margin-right: 26px;
+                    }
+                }
+                @include media($xl){
+                    &.reg-icon {
+                        img {
+                            width: 14px;
+                        }
+                    }
+                }
+                @include media($xl){
+                    &.par-icon {
+                        img {
+                            width: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section {
+        position: relative;
+        box-sizing: border-box;
+        &.hero {
+            background-image: url(../images/hero-bg.png);
+            background-size: cover;
+            padding-top: 152px;
+            box-sizing: border-box;
+            @include media($xl){
+                padding-top: 83px;
+            }
+            &::after {
+                @include after-content(769px, 601px);
+                background-image: url(../images/hero-img.png);
+                background-size: contain;
+                top: 80px;
+                right: -23px;
+                z-index: -1;
+            }
+            .hero-wrap {
+                .dots-wrap {
+                    &.dots-v {
+                        margin-left: 6px;
+                        @include media($xxl){
+                            margin-left: 0px;
+                        }
+                        @include media($xl){
+                            svg {
+                                width: 4px;
+                            }
+                        }
+                    }
+                    &.dots-g {
+                        margin-left: 0px;
+                        @include media($xl){
+                            svg {
+                                height: 4px;
+                            }
+                            margin-left: -9px;
+                        }
+                    }
+                }
+            }
+            .title-wrap {
+                margin-top: 26px;
+                margin-bottom: 58px;
+                @include media($xl){
+                    margin-top: 0px;
+                    margin-bottom: 28px;
+                }
+                .sub-title {
+                    color: #9575CD;
+                    font-family: "e-Ukr-Bold";
+                    font-size: 23px;
+                    font-style: normal;
+                    font-weight: 700;
+                    letter-spacing: 1.15px;
+                    margin-bottom: 13px;
+                    padding-left: 6px;
+                    @include media($xl){
+                        padding-left: 0px;
+                        font-size: 13px;
+                        margin-bottom: 2px;
+                    }
+                    @include media($xl){
+                        margin-top: 0px;
+                    }
+                }
+                .hero-title {
+                    color: #2B51A0;
+                    font-family: "Dela Gothic One";
+                    font-size: 119px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 100%;
+                    letter-spacing: 2.38px;
+                    text-transform: uppercase;
+                    text-align: justify;
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+                    @include media($xxl){
+                        font-size: 90px;
+                    }
+                    @include media($xl){
+                        font-size: 70px;
+                    }
+                    span {
+                        &:first-child {
+                            letter-spacing: -3.5px;
+                        } 
+                    }
+                    &::after {
+                        @include after-content (45px, 47px);
+                        background-image: url(../images/icon-arrow.svg);
+                        left: 6px;
+                        bottom: -72px;
+                        @include media($xl){
+                            width: 26px;
+                            height: 27px;
+                            background-size: cover;
+                            bottom: -43px;
+                            left: 0px;
+                        }
+                    }
+                }
+                h2 {
+                    color: #2B51A0;
+                    font-family: "Dela Gothic One";
+                    font-size: 60.037px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 4.203px;
+                    text-transform: uppercase;
+                    text-align: right;  
+                    @include media($xxl){
+                        font-size: 45px;
+                    }              
+                    @include media($xl){
+                        font-size: 34px;
+                        margin-top: 2px;
+                        margin-bottom: 28px;
+                    }        
+                }                
+            }
+            .content-wrap {
+                margin-top: 64px;
+                @include media($xl){
+                    margin-top: 28px;
+                }
+                .columns {
+                    justify-content: space-between;
+                }
+                .dots-row {
+                    text-align: right;
+                    margin-bottom: 42px;
+                    padding-right: 6px;
+                    @include media($xl){
+                        margin-bottom: 18px;
+                        padding-right: 0px;
+                    }
+                }
+                .left-column {
+                    width: 200px;
+                    color: #00B0EB;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    font-family: 'e-Ukr-Bold';
+                    padding-left: 6px;
+                    @include media($xl){
+                        font-size: 12px;
+                        padding-left: 0px;
+                        letter-spacing: 0.5px;
+                    }
+                    span {
+                        display: block;
+                        margin-bottom: 12px;
+                        @include media($xl){
+                            margin-bottom: -2px;
+                        }
+                        &:last-child {
+                            margin-bottom: 0px;
+                        }
+                    }
+                    .dots-wrap {
+                        margin-top: 30px;
+                        @include media($xl){
+                            margin-top: 9px;
+                        }
+                    }
+                }
+                .right-column {
+                    width: 545px;
+                    color: #00B0EB;
+                    font-family: 'e-Ukr-Bold';
+                    font-size: 23px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 1.61px;
+                    padding-top: 3px;
+                    padding-right: 6px;
+                    @include media($xl){
+                        font-size: 13px;
+                        width: 320px;
+                        padding-top: 6px;
+                        font-size: 13px;
+                        letter-spacing: 1.2px;
+                        padding-right: 2px;
+                    }
+                    .btn {
+                        margin-bottom: 14px;
+                        @include media($xl){
+                            margin-bottom: 8px;
+                        }
+                        a {
+                            padding-bottom: 4px;
+                            @include media($xl){
+                                height: 23px;
+                                font-size: 13px;
+                            }                            
+                        }
+                    }
+                }
+            }   
+        }
+        &.idea {
+            min-height: 500px;
+            padding-top: 74px;
+            @include media($xl){
+                padding-top: 40px;
+                min-height: auto;
+            }
+            &::after {
+                @include after-content(300px, 500px);
+                background-image: url(../images/idea-before.png);
+                background-size: contain;
+                top: -12px;
+                left: 0px;
+                z-index: -1;
+                @include media($xl){
+                    width: 180px;
+                    height: 300px;
+                    left: -42px;
+                }
+            }
+            .content-wrap {
+                padding-left: 212px;
+                @include media($xl){
+                    padding-left: 124px;
+                }
+                .small-title {
+                    color: #00B0EB;
+                    font-family: "Dela Gothic One";
+                    font-size: 47.055px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 59.602px; /* 126.667% */
+                    letter-spacing: 4.3px;
+                    text-transform: uppercase;
+                    margin-bottom: 60px;   
+                    position: relative;
+                    padding-left: 106px;
+                    @include media($xxl){
+                        font-size: 32px;
+                        line-height: 35px;
+                    }
+                    @include media($xl){
+                        font-size: 28px;
+                        padding-left: 63px;
+                        letter-spacing: 2.4px;
+                        margin-bottom: 29px;
+                    }
+                    span {
+                        color: #003548;
+                        font-family: "Dela Gothic One";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 1.26px;
+                        text-transform: uppercase;
+                        position: absolute;
+                        left: 0px;
+                        top: 14px;
+                        @include media($xl){
+                            font-size: 8px;
+                            top: 8px;
+                            margin-right: 10px;
+                        }
+                    }                 
+                }
+                .content {
+                    p {
+                        margin-bottom: 30px;
+                        letter-spacing: 0.48px;
+                        @include media($xl){
+                            font-size: 10px;
+                            line-height: 13px;
+                            letter-spacing: 0.05px;
+                            margin-bottom: 13px;
+                        }
+                    }
+                    span {
+                        &.arrow {
+                            display: inline-block;
+                            margin-right: 16px;
+                            position: relative;
+                            top: 5px;
+                            @include media($xl){
+                                margin-right: 11px;
+                                svg {
+                                    width: 21px;
+                                }
+                            }
+                         }
+                    }
+                }
+            }
+        }
+        &.agenda {
+            min-height: 640px;
+            padding-top: 15px;
+            padding-bottom: 560px;
+            @include media($xl){
+                min-height: auto;
+                padding-top: 43px;
+                padding-bottom: 302px;
+            }
+            &::after {
+                @include after-content(480px, 640px);
+                background-image: url(../images/agenda-after.png);
+                background-size: contain;
+                top: -110px;
+                right: 0px;
+                z-index: -1;
+            }   
+            .section-title {
+                color: #00B0EB;
+                font-family: "Dela Gothic One";
+                font-size: 100px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 9px;
+                text-transform: uppercase;
+                margin-bottom: 58px;
+                @include media($xxl){
+                    font-size: 80px;
+                    line-height: 100%;
+                    margin-bottom: 30px;
+                }
+                @include media($xl){
+                    font-size: 58px;
+                    margin-bottom: 48px;
+                    letter-spacing: 6px;
+                }
+            }   
+            .content-wrap {
+                .calendar-table {
+                    .table-row {
+                        margin-bottom: 2px;
+                        .columns {
+                            justify-content: space-between;
+                        }
+                        .content {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 54px;
+                            border-radius: 59px;
+                            border: 1px solid #00B0EB;
+                            background: rgba(228, 229, 234, 0.93);
+                            height: 43px;
+                            color: #00B0EB;
+                            font-family: "e-Ukr-bold";
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 700;
+                            letter-spacing: 0.6px;
+                            @include media($xl){
+                                font-size: 12px;
+                            }
+                            @include media($xl) { 
+                                height: 25px;
+                            }
+                            &.description {
+                                color: #003548;
+                                width: 100%;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 300;
+                                letter-spacing: 0.24px;
+                                font-family: "e-Ukr-Thin";
+                                justify-content: left;
+                                padding-left: 27px;
+                                @include media($xl){
+                                    font-size: 8px;
+                                }
+                            }
+                        }
+                        .time-column {
+                            width: 286px;
+                            @include media($xl) {
+                                width: 168px;
+                            }
+                        }
+                        .content-column {
+                            width: 922px;
+                            @include media($xxl) {
+                                width: 700px
+                            }
+                            @include media($xxl) {
+                                width: 542px;
+                            }
+                            .venue {
+                                &:first-child {
+                                    width: 208px;
+                                    @include media($xxl) {
+                                        width: 300px;
+                                    }
+                                    @include media($xl) { 
+                                        width: 208px;
+                                    }
+                                }
+                                &:last-child {
+                                    width: 326px;
+                                    @include media($xxl) {
+                                        width: 300px;
+                                    }
+                                    @include media($xl) { 
+                                        width: 325px;
+                                    }
+                                }
+                            }
+
+                        }
+                        &.title-row {
+                            margin-bottom: 22px;
+                            @include media($xl) { 
+                                margin-bottom: 13px;
+                            }
+                            .content {
+                                background: #00B0EB;
+                                color: #FFF;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                letter-spacing: 0.753px;
+                                text-transform: uppercase;
+                                font-family: "e-Ukr-Bold";
+                                height: 35px;
+                                border: none;
+                                @include media($xl){
+                                    font-size: 10px;
+                                }
+                                @include media($xl) { 
+                                    height: 20px;
+                                }
+                            }
+                            .content-column {
+                                justify-content: space-between;
+                                .content {
+                                    width: 354px;
+                                    @include media($xxl) {
+                                        width: 300px;
+                                    }
+                                    @include media($xl) { 
+                                        width: 208px;
+                                    }
+                                    &:nth-child(2) {
+                                        background: #9575CD;
+                                        width: 554px;
+                                        @include media($xxl) {
+                                            width: 394px;
+                                        }
+                                        @include media($xl) { 
+                                            width: 325px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }      
+        }
+        &.speakers {
+            min-height: 920px;
+            background-image: url(../images/speakers-bg.png);
+            background-size: cover;
+            padding-top: 61px;
+            padding-bottom: 50px;
+            @include media($xl){
+                min-height: auto;
+                padding-bottom: 25px;
+            }
+            &::after {
+                @include after-content(595px, 475px);
+                background-image: url(../images/speakers-before.png);
+                background-size: contain;
+                top: 25px;
+                right: 46px;
+                z-index: -1;
+            }  
+            .section-title {
+                color: #00B0EB;
+                font-family: "Dela Gothic One";
+                font-size: 100px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%;
+                letter-spacing: 9px;
+                text-transform: uppercase;
+                margin-bottom: 8px;
+                position: relative;
+                left: -4px;
+                @include media($xxl){
+                    left: 0px;
+                    font-size: 80px;
+                }
+                @include media($xl){
+                    font-size: 59px;
+                    letter-spacing: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+            .section-subtitle {
+                color: #9575CD;
+                font-family: "Dela Gothic One";
+                font-size: 36.492px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%;
+                letter-spacing: 3.284px;
+                text-transform: uppercase;
+                margin-bottom: 52px;
+                padding-left: 318px;
+                @include media($xl){
+                    font-size: 21px;
+                    padding-left: 187px;
+                    letter-spacing: 2.3px;
+                    margin-bottom: 22px;
+
+                }
+            }
+            .content-wrap {
+                margin-bottom: 40px;
+                @include media($xl){
+                    margin-bottom: 6px;
+                }
+                .columns {
+                    // justify-content: space-between;
+                }
+                .left-column {
+                    color: #003548;
+                    font-family: "Dela Gothic One";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 18px;
+                    letter-spacing: 1.26px;
+                    text-transform: uppercase;
+                    width: 280px;
+                    padding-top: 10px;
+                    @include media($xl){
+                        width: 170px;
+                        font-size: 8px;
+                        line-height: 12px;
+                        letter-spacing: 0.8px;
+                        padding-top: 14px;
+                    }
+                }
+                .right-column {
+                    width: 740px;
+                    color: #003548;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 34px; /* 0px */
+                    letter-spacing: 0.3px;
+                    margin-left: 144px;
+                    padding-top: 6px;
+                    font-family: "e-Ukr-Medium";
+                    @include media($xl){
+                        width: 440px;
+                        font-size: 12px;
+                        margin-left: 79px;
+                        letter-spacing: 0.1px;
+                        line-height: 20px;
+                        padding-top: 12px;
+                    }
+                }
+            }
+            .slider-wrap {
+                padding-top: 66px;
+                @include media($xl){
+                    padding-top: 57px;
+                }
+                .slide-item {
+                    .image-wrap {
+                        width: 180px;
+                        height: 255px;
+                        border-radius: 20px;
+                        overflow: hidden;
+                        margin-bottom: 39px;
+                        position: relative;
+                        @include media($xl){
+                            width: 105px;
+                            height: 150px;
+                            margin-bottom: 21px;
+                        border-radius: 12px;                        }
+                        img {
+                            object-fit: cover;
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .content-slider {
+                        margin-bottom: 13px;
+                        @include media($xl){
+                            margin-bottom: 3px;
+                        }
+                        span {
+                            display: block;
+                            &.name {
+                                font-family: "e-Ukr-Medium";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 100%;
+                                letter-spacing: 0.16px;
+                                margin-bottom: 9px;
+                                @include media($xl){
+                                    font-size: 10px;
+                                    margin-bottom: 2px;
+                                    letter-spacing: 0px;
+                                }
+                            }
+                            &.position {
+                                font-family: "e-Ukr-Thin";
+                                @include media($xl){
+                                    font-size: 10px;
+                                    line-height: 20px;
+                                    letter-spacing: 0px;
+                                }
+                            }
+                        }
+                    }
+                    .footer-slider {
+                        display: flex;
+                        .social-link  {
+                            @include media($xl){
+                                width: 18px;
+                                height: 18px;
+                                svg {
+                                    width: 18px;
+                                    height: 18px;
+                                }
+                            }
+                            &:first-child {
+                                margin-right: 14px;
+                                @include media($xl){
+                                    margin-right: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.art {
+            padding-top: 66px;
+            padding-bottom: 50px;
+             @include media($xl){
+                padding-top: 45px;
+                padding-bottom: 25px;
+             }
+            .columns {
+                .left-column {
+                    width: 354px;
+                    margin-top: 6px;
+                    @include media($xl){
+                        width: 208px;
+                    }
+                    .image-wrap {
+                        width: 100%;
+                        height: 422px;
+                        overflow: hidden;
+                        @include media($xl){
+                            height: 248px;
+                        }
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                            object-position: center;
+                        }
+                    }
+                }
+                .right-column {
+                    margin-left: 70px;
+                    width: 750px;
+                    @include media($xl){
+                        width: 445px;
+                        margin-left: 41px;
+                    }
+                    .section-name {
+                        color: #003548;
+                        font-family: "Dela Gothic One";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 1.26px;
+                        text-transform: uppercase;
+                        margin-bottom: 34px;
+                        @include media($xl){
+                            font-size: 8px;
+                            margin-bottom: 14px;
+                        }
+                    }
+                    .section-subtitle {
+                        color: #9575CD;
+                        font-family: "Dela Gothic One";
+                        font-size: 36.492px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 3.284px;
+                        text-transform: uppercase;
+                        line-height: 100%;
+                        margin-bottom: 81px;
+                        @include media($xl){
+                            font-size: 22px;
+                            margin-bottom: 49px;
+                            letter-spacing: 1.5px;
+
+                        }
+                    }
+                    .content {
+                        color: #003548;
+                        font-family: "e-Ukr-Medium";
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 33px; /* 0px */
+                        letter-spacing: 0.4px;
+                        @include media($xl){
+                            font-size: 12px;
+                            line-height: 19px;
+                            letter-spacing: 0.09px;
+                        }
+                        p {
+                            margin-bottom: 30px;
+                            @include media($xl){
+                                margin-bottom: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.partners {
+            padding-top: 39px;
+            background-size: cover;
+            @include media($xl){
+                padding-top: 29px;
+            }
+            &::before {
+                @include after-content(100%, 836px);
+                background-image: url(../images/partners-bg.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                top: -232px;
+                left: 0px;
+                z-index: -1;
+            } 
+            &::after {
+                @include after-content(546px, 504px);
+                background-image: url(../images/partner-before.png);
+                background-size: contain;
+                top: -98px;
+                right: 82px;
+                z-index: -1;
+            }  
+            .section-title {
+                color: #00B0EB;
+                font-family: "Dela Gothic One";
+                font-size: 90px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%;
+                letter-spacing: 8.1px;
+                text-transform: uppercase;
+                margin-bottom: 99px;
+                @include media($xxl){
+                    font-size: 80px;
+                    margin-bottom: 45px;
+                }
+                @include media($xl){
+                    font-size: 53px;
+                    letter-spacing: 4px;
+                    margin-bottom: 56px;
+                }
+            }
+            .partners-wrap {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .logo-item {
+                    width: 180px;
+                    height: 65px;
+                    border-radius: 38px;
+                    border: 1px solid #00B0EB;
+                    background: #FFF;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #003548;
+                    font-family: "Dela Gothic One";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 100%;
+                    letter-spacing: 1.26px;
+                    text-transform: uppercase;
+                    margin-bottom: 32px;
+                    overflow: hidden;
+                    img {
+                        object-fit: cover;
+                        object-position: center;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    @include media($xl){
+                        width: 105px;
+                        height: 38px;
+                        font-size: 8px;
+                        letter-spacing: 0.7px;
+                        margin-bottom: 18px;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        padding-top: 46px;
+        padding-bottom: 46px;
+        @include media($xl){
+            padding-top: 18px;
+            padding-bottom: 22px;
+        }
+        .sub-footer {
+            .title-wrap {
+                margin-top: 26px;
+                margin-bottom: -20px;
+                .sub-title {
+                    color: #00B0EB;
+                    font-family: "e-Ukr-Bold";
+                    font-size: 20.909px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 100%; /* 0px */
+                    letter-spacing: 1.045px;
+                    width: 660px;
+                    position: relative;
+                    bottom: 38px;
+                    @include media($xxl){
+                        width: 500px;
+                    }
+                    @include media($xl){
+                        font-size: 13px;
+                        letter-spacing: 0.2px;
+                        bottom: 23px;
+                    }
+                }
+                .hero-title {
+                    color: #2B51A0;
+                    font-family: "Dela Gothic One";
+                    font-size: 119px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 100%;
+                    letter-spacing: 2.38px;
+                    text-transform: uppercase;
+                    text-align: justify;
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+                    @include media($xxl){
+                        font-size: 90px;
+                    }
+                    @include media($xl){
+                        font-size: 70px;
+                        letter-spacing: 1px;
+                    }
+                    span {
+                        &:first-child {
+                            letter-spacing: -3.5px;
+                            @include media($xl){
+                                letter-spacing: -2px;
+                            }
+                        } 
+                    }
+                }
+                h2 {
+                    color: #2B51A0;
+                    font-family: "Dela Gothic One";
+                    font-size: 60.037px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 4.203px;
+                    text-transform: uppercase;
+                    text-align: right;     
+                    width: 630px;     
+                    margin-left: auto;  
+                    @include media($xxl){
+                        font-size: 45px;
+                        width: 480px;
+                    }    
+                    @include media($xl){
+                        font-size: 35px;
+                        letter-spacing: 2.4px;
+                    }        
+                }               
+            }
+            .dots-wrap {
+                @include media($xl){
+                    position: relative;
+                    left: -9px;                    
+                    svg {
+                        height: 4px;
+                    }
+                }
+            } 
+        }
+        .main-footer {
+            padding-top: 32px;
+            margin-top: 12px;
+            border-top:solid 2px #003548;
+            @include media($xl){
+                padding-top: 18px;
+                margin-top: 5px;
+            }
+            .columns {
+                .left-column {
+                    width: 127px;
+                    @include media($xl){
+                        width: 74px;
+                    }
+                    .logo-wrap {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                .center-column {
+                    width: 300px;
+                    margin-left: 85px;
+                    padding-top: 31px;
+                    @include media($xl){
+                        width: 126px;
+                        margin-left: 51px;
+                        padding-top: 20px;
+                    }
+                    .social-links-wrap {
+                        display: flex;
+                        .social-link {
+                            margin-right: 15px;
+                            @include media($xl){
+                                margin-right: 8px;
+                            }
+                            &:last-child {
+                                margin-right: 0px;
+                            }
+                            svg {
+                                width: 41px;
+                                height: 41px;
+                                @include media($xl){
+                                    width: 24px;
+                                    height: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .right-column {
+                    width: 350px;
+                    margin-left: auto;
+                    position: relative;
+                    right: -3px;
+                    .right-navigation {
+                        padding-top: 19px;
+                        @include media($xl){
+                            padding-top: 12px;
+                        }
+                        .columns {
+                            display: flex;
+                            justify-content: end;
+                        }
+                        a {
+                            color: #00B0EB;
+                            font-family: "Dela Gothic One";
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 0.48px;
+                            text-transform: uppercase;
+                            @include media($xl){
+                                font-size: 7px;
+                            }
+                        }
+                        span {
+                            display: block;
+                            position: relative;
+                            margin-top: 3px;
+                        }
+                        .column-wrap {
+                            &:first-child {
+                                margin-right: 38px;
+                            }
+                            .reg-wrap {
+                                img {
+                                    width: 28px;
+                                    @include media($xl){
+                                        width: 15px;
+                                    }
+                                }
+                            }
+                            .par-wrap {
+                                img {
+                                    width: 34px;
+                                    @include media($xl){
+                                        width: 21px;
+                                    }
+                                }
+                                span {
+                                    margin-bottom: 6px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
