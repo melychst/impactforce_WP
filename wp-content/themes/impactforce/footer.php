@@ -91,18 +91,32 @@
                             <div class="columns display-flex">
                                 <div class="column-wrap">
                                     <div class="icon-wrap reg-wrap">
-                                        <a href="#">
-                                            <img src="images/icon-reg.svg" alt="">
-                                            <span>registration</span>
-                                        </a>
+                                        <?php 
+                                            $reg_icon = get_field('registration_icon', 'option'); 
+                                            if( $reg_icon ):
+                                        ?>
+                                            <a href="<?php echo get_field('registration_link', 'option'); ?>" target="_blank">
+                                                <img src="<?php echo $reg_icon['url']; ?>" alt="<?php echo $reg_icon['alt']; ?>">
+                                                <span>registration</span>
+                                            </a>                                       
+                                        <?php
+                                            endif;
+                                        ?>
                                     </div>
                                 </div>
                                 <div class="column-wrap">
                                     <div class="icon-wrap par-wrap">
-                                        <a href="#">
-                                            <img src="images/icon-part.svg" alt="">
-                                            <span>partnership</span>
-                                        </a>
+                                        <?php 
+                                            $part_icon = get_field('partnership_icon', 'option'); 
+                                            if( $reg_icon ):
+                                        ?>
+                                            <a href="<?php echo get_field('partnership_link', 'option'); ?>" target="_blank">
+                                                <img src="<?php echo $part_icon['url']; ?>" alt="<?php echo $part_icon['alt']; ?>">
+                                                <span>partnership</span>
+                                            </a>                                       
+                                        <?php
+                                            endif;
+                                        ?>
                                     </div>
                                 </div>
                             </div>
