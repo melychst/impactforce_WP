@@ -141,7 +141,8 @@ body {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    padding-top: 7px; }
+    padding-top: 7px;
+    z-index: 10; }
     @media only screen and (max-width: 1290px) {
       body header {
         width: 1022px; } }
@@ -759,7 +760,7 @@ body {
             letter-spacing: 2.3px;
             margin-bottom: 22px; } }
       body section.speakers .content-wrap {
-        margin-bottom: 40px; }
+        margin-bottom: 0px; }
         @media only screen and (max-width: 1023px) {
           body section.speakers .content-wrap {
             margin-bottom: 6px; } }
@@ -802,10 +803,15 @@ body {
               line-height: 20px;
               padding-top: 12px; } }
       body section.speakers .slider-wrap {
-        padding-top: 66px; }
+        padding-top: 106px;
+        position: relative; }
         @media only screen and (max-width: 1023px) {
           body section.speakers .slider-wrap {
             padding-top: 57px; } }
+        body section.speakers .slider-wrap .dots-wrap {
+          position: absolute;
+          top: 59px;
+          left: 350px; }
         body section.speakers .slider-wrap .slide-item .image-wrap {
           width: 180px;
           height: 255px;
@@ -868,6 +874,32 @@ body {
             @media only screen and (max-width: 1023px) {
               body section.speakers .slider-wrap .slide-item .footer-slider .social-link:first-child {
                 margin-right: 8px; } }
+        body section.speakers .slider-wrap .slider-navigation {
+          position: absolute;
+          top: 40px;
+          left: 0px; }
+          body section.speakers .slider-wrap .slider-navigation .slide-arrow {
+            width: 74px;
+            height: 35px;
+            border-radius: 59px;
+            border: 1px solid #003548;
+            background: #FFF;
+            cursor: pointer;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            body section.speakers .slider-wrap .slider-navigation .slide-arrow.prev-slide {
+              margin-right: 23px; }
+            body section.speakers .slider-wrap .slider-navigation .slide-arrow:hover svg path {
+              fill: #00B0EB;
+              -webkit-transition: 0.2s;
+              transition: 0.2s; }
     body section.art {
       padding-top: 66px;
       padding-bottom: 50px; }
@@ -1030,7 +1062,8 @@ body {
           letter-spacing: 1.26px;
           text-transform: uppercase;
           margin-bottom: 32px;
-          overflow: hidden; }
+          overflow: hidden;
+          text-align: center; }
           body section.partners .partners-wrap .logo-item img {
             -o-object-fit: cover;
                object-fit: cover;

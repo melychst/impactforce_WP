@@ -9,7 +9,6 @@
                 <?php
                             foreach( $partners as $key => $partner ):
                                 $partner_logo = $partner['partner_logo'];
-                                print_r($partner_logo);
                                 
                 ?>
                                     <div class="logo-item">
@@ -20,10 +19,10 @@
                                         <?php 
                                             else: 
                                                 echo "LOG0 ". $key;
+                                            endif;
                                         ?> 
                                     </div>
                 <?php
-                                endif;
                             endforeach;
                 ?>
                         </div>

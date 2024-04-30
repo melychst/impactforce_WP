@@ -42,6 +42,7 @@ body {
         left: 50%;
         transform: translateX(-50%);
         padding-top: 7px;
+        z-index: 10;
         @include media($xxl){
             width: 1022px;
         }
@@ -698,7 +699,7 @@ body {
                 }
             }
             .content-wrap {
-                margin-bottom: 40px;
+                margin-bottom: 0px;
                 @include media($xl){
                     margin-bottom: 6px;
                 }
@@ -746,9 +747,15 @@ body {
                 }
             }
             .slider-wrap {
-                padding-top: 66px;
+                padding-top: 106px;
+                position: relative;
                 @include media($xl){
                     padding-top: 57px;
+                }
+                .dots-wrap {
+                    position: absolute;
+                    top: 59px;
+                    left: 350px;
                 }
                 .slide-item {
                     .image-wrap {
@@ -816,6 +823,33 @@ body {
                                 margin-right: 14px;
                                 @include media($xl){
                                     margin-right: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .slider-navigation {
+                    position: absolute;
+                    top: 40px;
+                    left: 0px;
+                    .slide-arrow {
+                        width: 74px;
+                        height: 35px;
+                        border-radius: 59px;
+                        border: 1px solid #003548;
+                        background: #FFF;
+                        cursor: pointer;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        &.prev-slide {
+                            margin-right: 23px;
+                        }
+                        &:hover {
+                            svg {
+                                path {
+                                    fill: #00B0EB;
+                                    transition: 0.2s;
                                 }
                             }
                         }
@@ -979,6 +1013,7 @@ body {
                     text-transform: uppercase;
                     margin-bottom: 32px;
                     overflow: hidden;
+                    text-align: center;
                     img {
                         object-fit: cover;
                         object-position: center;

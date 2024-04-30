@@ -13,11 +13,47 @@
             </div>
         </div>
         <div class="slider-wrap">
+             <span class="dots-wrap dots-g">
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="7" viewBox="0 0 43 7" fill="none">
+                    <circle cx="3.5" cy="3.5" r="3.5" fill="#003548"/>
+                    <circle cx="15.5" cy="3.5" r="3.5" fill="#003548"/>
+                    <circle cx="27.5" cy="3.5" r="3.5" fill="#003548"/>
+                    <circle cx="39.5" cy="3.5" r="3.5" fill="#003548"/>
+                </svg>
+            </span>
             <?php
                 $speakers = get_field('speakers');
                 if( !empty($speakers) ):
             ?>
-                    <div id="speakers-slider">
+                    <div class="slider-navigation">
+                        <span class="slide-arrow prev-slide">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="15" viewBox="0 0 35 15" fill="none">
+                                <g clip-path="url(#clip0_3_154)">
+                                    <path d="M0.0579485 7.84665C1.39073 8.14137 4.9255 9.32022 4.80961 14.0356L6.37417 14.0356C6.43212 10.8527 5.15729 8.96656 3.70861 7.84665L35 7.84665L35 6.07836L3.70861 6.07837C5.15729 4.95845 6.43212 3.13123 6.37417 0.0661989L4.80961 0.0661991C4.86755 4.6048 1.44868 5.78365 0.0579484 6.07837L-6.97169e-07 6.07837L0.0579485 7.84665Z" fill="#003548"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3_154">
+                                    <rect width="35" height="13.9694" fill="white" transform="translate(35 14.0356) rotate(180)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </span>                        
+                        <span class="slide-arrow next-slide">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="15" viewBox="0 0 35 15" fill="none">
+                                <g clip-path="url(#clip0_3_152)">
+                                    <path d="M34.9421 6.25516C33.6093 5.96044 30.0745 4.78159 30.1904 0.0661621H28.6258C28.5679 3.24907 29.8427 5.13524 31.2914 6.25516H0V8.02344H31.2914C29.8427 9.14336 28.5679 10.9706 28.6258 14.0356H30.1904C30.1324 9.49701 33.5513 8.31816 34.9421 8.02344H35L34.9421 6.25516Z" fill="#003548"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3_152">
+                                    <rect width="35" height="13.9694" fill="white" transform="translate(0 0.0661621)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>                            
+ 
+                        </span>
+
+                    </div>
+                    <div id="speakers-slider" class="owl-carousel">
                         <?php
                             foreach( $speakers as $key => $speaker ):
                                 $photo = $speaker['image'];
