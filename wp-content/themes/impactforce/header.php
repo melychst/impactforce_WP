@@ -33,13 +33,14 @@
                 <div class="column center-column">
                     <div class="main-navigation">
                         <div class="navigation-wrap">
-                            <ul class="navigation">
-                                <li><a href="#">About IFF</a></li>
-                                <li><a href="#">Agenda</a></li>
-                                <li><a href="#">Speakers</a></li>
-                                <li><a href="#">Partners</a></li>
-                            </ul>
+                            <?php
+                                wp_nav_menu(array(
+                                "theme_location"  => "primary",
+                                "menu"              => "primary",
+                                ));
+                            ?>
                         </div>
+
                     </div>
                 </div>
                 <div class="column right-column">
@@ -83,3 +84,4 @@
             </div>
         </div>
     </header>  
+    <main>    

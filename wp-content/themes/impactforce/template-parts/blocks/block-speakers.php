@@ -1,4 +1,4 @@
-<section class="speakers">
+<section id="<?php echo get_field('block_id'); ?>" class="speakers">
     <div class="container">
         <h2 class="section-title"><?php echo get_field('main_title'); ?></h2>
         <div class="section-subtitle"><?php echo get_field('sub_title'); ?></div>

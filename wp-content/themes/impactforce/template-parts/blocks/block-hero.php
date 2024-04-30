@@ -1,4 +1,4 @@
-<section class="hero">
+<section id="<?php echo get_field('block_id'); ?>" class="hero">
     <div class="container">
         <div class="hero-wrap">
             <span class="dots-wrap dots-v">
@@ -14,7 +14,7 @@
                 <h1 class="hero-title"><?php echo get_field('title'); ?></h1>     
                 <h2><?php echo get_field('second_title'); ?></h2>                  
             </div>
-            <span class="dots-wrap dots-g">
+            <span class="dots-wrap dots-g dots-v-mob">
                 <svg xmlns="http://www.w3.org/2000/svg" width="43" height="7" viewBox="0 0 43 7" fill="none">
                     <circle cx="3.5" cy="3.5" r="3.5" fill="#003548"/>
                     <circle cx="15.5" cy="3.5" r="3.5" fill="#003548"/>
@@ -23,7 +23,7 @@
                     </svg>
             </span>
             <div class="content-wrap">
-                <div class="dots-row">
+                <div class="dots-row mobile-none">
                     <span class="dots-wrap dots-g">
                         <svg xmlns="http://www.w3.org/2000/svg" width="43" height="7" viewBox="0 0 43 7" fill="none">
                             <circle cx="3.5" cy="3.5" r="3.5" fill="#003548"/>

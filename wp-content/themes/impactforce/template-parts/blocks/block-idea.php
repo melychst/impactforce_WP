@@ -1,4 +1,4 @@
-<section class="idea">
+<section id="<?php echo get_field('block_id'); ?>" class="idea">
     <div class="container">
         <div class="content-wrap">
             <h3 class="small-title">

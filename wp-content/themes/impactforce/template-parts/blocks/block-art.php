@@ -1,4 +1,4 @@
-<section class="art">
+<section id="<?php echo get_field('block_id'); ?>" class="art">
     <div class="container">
         <div class="columns display-flex">
             <div class="column left-column">

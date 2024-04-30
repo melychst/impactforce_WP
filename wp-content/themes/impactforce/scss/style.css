@@ -130,7 +130,8 @@ body {
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
-    padding-top: 7px; }
+    padding-top: 7px;
+    z-index: 10; }
     @media only screen and (max-width: 1290px) {
       body header {
         width: 1022px; } }
@@ -547,115 +548,121 @@ body {
             font-size: 58px;
             margin-bottom: 48px;
             letter-spacing: 6px; } }
-      body section.agenda .content-wrap .calendar-table .table-row {
-        margin-bottom: 2px; }
-        body section.agenda .content-wrap .calendar-table .table-row .columns {
-          justify-content: space-between; }
-        body section.agenda .content-wrap .calendar-table .table-row .content {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 54px;
-          border-radius: 59px;
-          border: 1px solid #00B0EB;
-          background: rgba(228, 229, 234, 0.93);
-          height: 43px;
-          color: #00B0EB;
-          font-family: "e-Ukr-bold";
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 700;
-          letter-spacing: 0.6px; }
-          @media only screen and (max-width: 1023px) {
-            body section.agenda .content-wrap .calendar-table .table-row .content {
-              font-size: 12px; } }
-          @media only screen and (max-width: 1023px) {
-            body section.agenda .content-wrap .calendar-table .table-row .content {
-              height: 25px; } }
-          body section.agenda .content-wrap .calendar-table .table-row .content.description {
-            color: #003548;
-            width: 100%;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 300;
-            letter-spacing: 0.24px;
-            font-family: "e-Ukr-Thin";
-            justify-content: left;
-            padding-left: 27px; }
-            @media only screen and (max-width: 1023px) {
-              body section.agenda .content-wrap .calendar-table .table-row .content.description {
-                font-size: 8px; } }
-        body section.agenda .content-wrap .calendar-table .table-row .time-column {
-          width: 286px; }
-          @media only screen and (max-width: 1023px) {
-            body section.agenda .content-wrap .calendar-table .table-row .time-column {
-              width: 168px; } }
-        body section.agenda .content-wrap .calendar-table .table-row .content-column {
-          width: 922px; }
-          @media only screen and (max-width: 1290px) {
-            body section.agenda .content-wrap .calendar-table .table-row .content-column {
-              width: 700px; } }
-          @media only screen and (max-width: 1290px) {
-            body section.agenda .content-wrap .calendar-table .table-row .content-column {
-              width: 542px; } }
-          body section.agenda .content-wrap .calendar-table .table-row .content-column .venue:first-child {
-            width: 208px; }
-            @media only screen and (max-width: 1290px) {
-              body section.agenda .content-wrap .calendar-table .table-row .content-column .venue:first-child {
-                width: 300px; } }
-            @media only screen and (max-width: 1023px) {
-              body section.agenda .content-wrap .calendar-table .table-row .content-column .venue:first-child {
-                width: 208px; } }
-          body section.agenda .content-wrap .calendar-table .table-row .content-column .venue:last-child {
-            width: 326px; }
-            @media only screen and (max-width: 1290px) {
-              body section.agenda .content-wrap .calendar-table .table-row .content-column .venue:last-child {
-                width: 300px; } }
-            @media only screen and (max-width: 1023px) {
-              body section.agenda .content-wrap .calendar-table .table-row .content-column .venue:last-child {
-                width: 325px; } }
-        body section.agenda .content-wrap .calendar-table .table-row.title-row {
-          margin-bottom: 22px; }
-          @media only screen and (max-width: 1023px) {
-            body section.agenda .content-wrap .calendar-table .table-row.title-row {
-              margin-bottom: 13px; } }
-          body section.agenda .content-wrap .calendar-table .table-row.title-row .content {
-            background: #00B0EB;
-            color: #FFF;
-            font-size: 16px;
+      body section.agenda .content-wrap .calendar-table {
+        position: relative; }
+        body section.agenda .content-wrap .calendar-table .dots-wrap {
+          position: absolute;
+          right: 0px;
+          top: 30px; }
+        body section.agenda .content-wrap .calendar-table .table-row {
+          margin-bottom: 2px; }
+          body section.agenda .content-wrap .calendar-table .table-row .columns {
+            justify-content: space-between; }
+          body section.agenda .content-wrap .calendar-table .table-row .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 54px;
+            border-radius: 59px;
+            border: 1px solid #00B0EB;
+            background: rgba(228, 229, 234, 0.93);
+            height: 43px;
+            color: #00B0EB;
+            font-family: "e-Ukr-bold";
+            font-size: 20px;
             font-style: normal;
             font-weight: 700;
-            line-height: normal;
-            letter-spacing: 0.753px;
-            text-transform: uppercase;
-            font-family: "e-Ukr-Bold";
-            height: 35px;
-            border: none; }
+            letter-spacing: 0.6px; }
             @media only screen and (max-width: 1023px) {
-              body section.agenda .content-wrap .calendar-table .table-row.title-row .content {
-                font-size: 10px; } }
+              body section.agenda .content-wrap .calendar-table .table-row .content {
+                font-size: 12px; } }
             @media only screen and (max-width: 1023px) {
-              body section.agenda .content-wrap .calendar-table .table-row.title-row .content {
-                height: 20px; } }
-          body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column {
-            justify-content: space-between; }
-            body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column .content {
-              width: 354px; }
+              body section.agenda .content-wrap .calendar-table .table-row .content {
+                height: 25px; } }
+            body section.agenda .content-wrap .calendar-table .table-row .content.description {
+              color: #003548;
+              width: 100%;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 300;
+              letter-spacing: 0.24px;
+              font-family: "e-Ukr-Thin";
+              justify-content: left;
+              padding-left: 27px; }
+              @media only screen and (max-width: 1023px) {
+                body section.agenda .content-wrap .calendar-table .table-row .content.description {
+                  font-size: 8px; } }
+          body section.agenda .content-wrap .calendar-table .table-row .time-column {
+            width: 286px; }
+            @media only screen and (max-width: 1023px) {
+              body section.agenda .content-wrap .calendar-table .table-row .time-column {
+                width: 168px; } }
+          body section.agenda .content-wrap .calendar-table .table-row .content-column {
+            width: 922px; }
+            @media only screen and (max-width: 1290px) {
+              body section.agenda .content-wrap .calendar-table .table-row .content-column {
+                width: 700px; } }
+            @media only screen and (max-width: 1290px) {
+              body section.agenda .content-wrap .calendar-table .table-row .content-column {
+                width: 542px; } }
+            body section.agenda .content-wrap .calendar-table .table-row .content-column .venue:first-child {
+              width: 208px; }
               @media only screen and (max-width: 1290px) {
-                body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column .content {
+                body section.agenda .content-wrap .calendar-table .table-row .content-column .venue:first-child {
                   width: 300px; } }
               @media only screen and (max-width: 1023px) {
-                body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column .content {
+                body section.agenda .content-wrap .calendar-table .table-row .content-column .venue:first-child {
                   width: 208px; } }
-              body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column .content:nth-child(2) {
-                background: #9575CD;
-                width: 554px; }
+            body section.agenda .content-wrap .calendar-table .table-row .content-column .venue:last-child {
+              width: 326px; }
+              @media only screen and (max-width: 1290px) {
+                body section.agenda .content-wrap .calendar-table .table-row .content-column .venue:last-child {
+                  width: 300px; } }
+              @media only screen and (max-width: 1023px) {
+                body section.agenda .content-wrap .calendar-table .table-row .content-column .venue:last-child {
+                  width: 325px; } }
+          body section.agenda .content-wrap .calendar-table .table-row.title-row {
+            margin-bottom: 22px; }
+            @media only screen and (max-width: 1023px) {
+              body section.agenda .content-wrap .calendar-table .table-row.title-row {
+                margin-bottom: 13px; } }
+            body section.agenda .content-wrap .calendar-table .table-row.title-row .content {
+              background: #00B0EB;
+              color: #FFF;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              letter-spacing: 0.753px;
+              text-transform: uppercase;
+              font-family: "e-Ukr-Bold";
+              height: 35px;
+              border: none; }
+              @media only screen and (max-width: 1023px) {
+                body section.agenda .content-wrap .calendar-table .table-row.title-row .content {
+                  font-size: 10px; } }
+              @media only screen and (max-width: 1023px) {
+                body section.agenda .content-wrap .calendar-table .table-row.title-row .content {
+                  height: 20px; } }
+            body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column {
+              justify-content: space-between; }
+              body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column .content {
+                width: 354px; }
                 @media only screen and (max-width: 1290px) {
-                  body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column .content:nth-child(2) {
-                    width: 394px; } }
+                  body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column .content {
+                    width: 300px; } }
                 @media only screen and (max-width: 1023px) {
-                  body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column .content:nth-child(2) {
-                    width: 325px; } }
+                  body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column .content {
+                    width: 208px; } }
+                body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column .content:nth-child(2) {
+                  background: #9575CD;
+                  width: 554px; }
+                  @media only screen and (max-width: 1290px) {
+                    body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column .content:nth-child(2) {
+                      width: 394px; } }
+                  @media only screen and (max-width: 1023px) {
+                    body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column .content:nth-child(2) {
+                      width: 325px; } }
     body section.speakers {
       min-height: 920px;
       background-image: url(../images/speakers-bg.png);
@@ -716,7 +723,7 @@ body {
             letter-spacing: 2.3px;
             margin-bottom: 22px; } }
       body section.speakers .content-wrap {
-        margin-bottom: 40px; }
+        margin-bottom: 0px; }
         @media only screen and (max-width: 1023px) {
           body section.speakers .content-wrap {
             margin-bottom: 6px; } }
@@ -759,10 +766,15 @@ body {
               line-height: 20px;
               padding-top: 12px; } }
       body section.speakers .slider-wrap {
-        padding-top: 66px; }
+        padding-top: 106px;
+        position: relative; }
         @media only screen and (max-width: 1023px) {
           body section.speakers .slider-wrap {
             padding-top: 57px; } }
+        body section.speakers .slider-wrap .dots-wrap {
+          position: absolute;
+          top: 59px;
+          left: 350px; }
         body section.speakers .slider-wrap .slide-item .image-wrap {
           width: 180px;
           height: 255px;
@@ -822,6 +834,25 @@ body {
             @media only screen and (max-width: 1023px) {
               body section.speakers .slider-wrap .slide-item .footer-slider .social-link:first-child {
                 margin-right: 8px; } }
+        body section.speakers .slider-wrap .slider-navigation {
+          position: absolute;
+          top: 40px;
+          left: 0px; }
+          body section.speakers .slider-wrap .slider-navigation .slide-arrow {
+            width: 74px;
+            height: 35px;
+            border-radius: 59px;
+            border: 1px solid #003548;
+            background: #FFF;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center; }
+            body section.speakers .slider-wrap .slider-navigation .slide-arrow.prev-slide {
+              margin-right: 23px; }
+            body section.speakers .slider-wrap .slider-navigation .slide-arrow:hover svg path {
+              fill: #00B0EB;
+              transition: 0.2s; }
     body section.art {
       padding-top: 66px;
       padding-bottom: 50px; }
@@ -970,7 +1001,14 @@ body {
           line-height: 100%;
           letter-spacing: 1.26px;
           text-transform: uppercase;
-          margin-bottom: 32px; }
+          margin-bottom: 32px;
+          overflow: hidden;
+          text-align: center; }
+          body section.partners .partners-wrap .logo-item img {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 100%; }
           @media only screen and (max-width: 1023px) {
             body section.partners .partners-wrap .logo-item {
               width: 105px;
