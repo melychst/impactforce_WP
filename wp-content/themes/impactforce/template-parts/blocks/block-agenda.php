@@ -2,7 +2,7 @@
     <div class="container">
         <h2 class="section-title"><?php echo get_field('main_title'); ?></h2>
         <div class="content-wrap">
-            <div class="calendar-table desktop" style="display: none; ">
+            <div class="calendar-table desktop">
                 <span class="dots-wrap dots-g">
                     <svg xmlns="http://www.w3.org/2000/svg" width="43" height="7" viewBox="0 0 43 7" fill="none">
                         <circle cx="3.5" cy="3.5" r="3.5" fill="#003548"/>

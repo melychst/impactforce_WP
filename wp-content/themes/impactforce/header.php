@@ -81,7 +81,25 @@
                         </div>
                     </div>
                 </div>
+                <div class="mobile-burger">
+                    <div class="image-wrap">
+                        <img src="<?php echo TEMPLATE_DIRECTORY_URI .'/assets/images/burger.svg'?>" alt="">
+                    </div>
+                </div>
             </div>
         </div>
-    </header>  
+    </header> 
+    <div class="mobile-navigation">
+        <div class="burger-close">
+             <img src="<?php echo TEMPLATE_DIRECTORY_URI .'/assets/images/burger-close.svg'?>" alt="">
+        </div>
+        <div class="navigation-wrap">
+            <?php
+                wp_nav_menu(array(
+                "theme_location"  => "primary",
+                "menu"              => "primary",
+                ));
+            ?>                                            
+        </div>
+    </div>     
     <main>    
