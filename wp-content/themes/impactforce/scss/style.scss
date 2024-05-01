@@ -755,134 +755,17 @@ body {
                         position: absolute;
                         right: 0px;
                         top: -90px;
+                        @include media($md){
+                            right: -10px;
+                            bottom: -75px;
+                            top: auto;
+                        }
                         svg {
                             @include media($xl){
                                 height: 4px;
                             }
-                        }
-                    }
-                    .table-row {
-                        margin-bottom: 2px;
-                        .columns {
-                            justify-content: space-between;
-                        }
-                        .content {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            border-radius: 54px;
-                            border-radius: 59px;
-                            border: 1px solid #00B0EB;
-                            background: rgba(228, 229, 234, 0.93);
-                            height: 43px;
-                            color: #00B0EB;
-                            font-family: "e-Ukr-bold";
-                            font-size: 20px;
-                            font-style: normal;
-                            font-weight: 700;
-                            letter-spacing: 0.6px;
-                            @include media($xl){
-                                font-size: 12px;
-                            }
-                            @include media($xl) { 
-                                height: 25px;
-                            }
-                            &.description {
-                                color: #003548;
-                                width: 100%;
-                                font-size: 14px;
-                                font-style: normal;
-                                font-weight: 300;
-                                letter-spacing: 0.24px;
-                                font-family: "e-Ukr-Thin";
-                                justify-content: left;
-                                padding-left: 27px;
-                                @include media($xl){
-                                    font-size: 8px;
-                                }
-                            }
-                        }
-                        .time-column {
-                            width: 286px;
-                            @include media($xl) {
-                                width: 168px;
-                            }
-                        }
-                        .content-column {
-                            width: 922px;
-                            @include media($xxl) {
-                                width: 700px
-                            }
-                            @include media($xl) {
-                                width: 542px;
-                            }
-                            .venue {
-                                &:first-child {
-                                    width: 208px;
-                                    @include media($xxl) {
-                                        width: 300px;
-                                    }
-                                    @include media($xl) { 
-                                        width: 208px;
-                                    }
-                                }
-                                &:last-child {
-                                    width: 326px;
-                                    @include media($xxl) {
-                                        width: 300px;
-                                    }
-                                    @include media($xl) { 
-                                        width: 325px;
-                                    }
-                                }
-                            }
-
-                        }
-                        &.title-row {
-                            margin-bottom: 22px;
-                            @include media($xl) { 
-                                margin-bottom: 13px;
-                            }
-                            .content {
-                                background: #00B0EB;
-                                color: #FFF;
-                                font-size: 16px;
-                                font-style: normal;
-                                font-weight: 700;
-                                line-height: normal;
-                                letter-spacing: 0.753px;
-                                text-transform: uppercase;
-                                font-family: "e-Ukr-Bold";
-                                height: 35px;
-                                border: none;
-                                @include media($xl){
-                                    font-size: 10px;
-                                }
-                                @include media($xl) { 
-                                    height: 20px;
-                                }
-                            }
-                            .content-column {
-                                justify-content: space-between;
-                                .content {
-                                    width: 354px;
-                                    @include media($xxl) {
-                                        width: 300px;
-                                    }
-                                    @include media($xl) { 
-                                        width: 208px;
-                                    }
-                                    &:nth-child(2) {
-                                        background: #9575CD;
-                                        width: 554px;
-                                        @include media($xxl) {
-                                            width: 394px;
-                                        }
-                                        @include media($xl) { 
-                                            width: 325px;
-                                        }
-                                    }
-                                }
+                            @include media($md){
+                                height: 3px;
                             }
                         }
                     }
@@ -892,13 +775,16 @@ body {
                     display: flex;
                     justify-content: space-between;
                     @include media($md){
-                        display: none;
+                        //display: none;
                     }
                     .table-column {
                         &.time-column {
                             width: 286px;
                             @include media($xl) {
                                 width: 168px;
+                            }
+                            @include media($md){
+                                width: 87px;
                             }
                             .title-td {
                                 background: #00B0EB;
@@ -968,6 +854,9 @@ body {
                             @include media($xl) {
                                 width: 542px;
                             }
+                            @include media($md) {
+                                width: 201px;
+                            }
                             .title {
                                 margin-bottom: 22px;
                                 @include media($xl) {
@@ -1004,27 +893,51 @@ body {
                                     }           
                                     @include media($md) { 
                                         font-size: 7px;
-                                        min-height: 23px;
+                                        letter-spacing: 0.28px;
+                                        text-align: center;
+                                        padding: 4px 8px;
                                     } 
                                 }
                                 .venue-1 {
                                     width: 354px;
                                     background: #00B0EB;
+                                    cursor: pointer;
                                     @include media($xxl) {
                                         width: 300px;
                                     }
                                     @include media($xl) { 
                                         width: 208px;
                                     }
+                                    @include media($md) { 
+                                        width: 98px
+                                    }
+                                    &.active {
+                                        @include media($md){
+                                            border: 1px solid #00B0EB;
+                                            background: #FFF;
+                                            color: #00B0EB;
+                                        }
+                                    }
                                 }
                                 .venue-2 {
                                     width: 554px;
                                     background: #9575CD;
+                                    cursor: pointer;
                                     @include media($xxl) {
                                         width: 394px;
                                     }
                                     @include media($xl) { 
                                         width: 325px;
+                                    }
+                                    @include media($md) { 
+                                        width: 98px;
+                                    }
+                                    &.active {
+                                        @include media($md){
+                                            border: 1px solid #9575CD;
+                                            background: #FFF;
+                                            color: #9575CD;
+                                        }
                                     }
                                 }
                             }
@@ -1035,6 +948,9 @@ body {
                                 }
                                 @include media($xl) {
                                     width: 542px;
+                                }
+                                @include media($md) { 
+                                        width: 100%;
                                 }
                                 &.venues-none {
                                     color: #003548;
@@ -1080,6 +996,21 @@ body {
                                     >.display-flex {
                                         justify-content: space-between;
                                     }
+                                    .content-venues {
+                                        @include media($md) { 
+                                            display: none;
+                                            width: 0px;
+                                        }
+                                        &.hide {
+                                            display: none;
+                                            width: 0px;
+                                        }
+                                        &.active {
+                                            @include media($md){
+                                                width: 100%;                                                
+                                            }
+                                        }
+                                    }
                                     .venues-1 {
                                         width: 350px;
                                         @include media($xxl) {
@@ -1112,6 +1043,9 @@ body {
                                             @include media($md) { 
                                                 font-size: 7px;
                                                 border-radius: 13px;
+                                                line-height: 12px;
+                                                min-height: 95px;
+                                                padding: 4px 48px 15px 10px;
                                             }
                                             span {
                                                 display: block;
@@ -1120,6 +1054,9 @@ body {
                                                     text-transform: uppercase;
                                                     @include media($xl) { 
                                                         margin-bottom: 14px;
+                                                    }
+                                                    @include media($md) {
+                                                        margin-bottom: 11px;
                                                     }
                                                 }
                                             }
@@ -1164,6 +1101,11 @@ body {
                                             }
                                             @include media($md) { 
                                                 font-size: 7px;
+                                                min-height: 23px;
+                                                padding: 3px 5px 3px 10px;
+                                                line-height: 7px;
+                                                letter-spacing: 0.07px;
+                                                margin-bottom: 2px;
                                             }
                                             span {
                                                 display: block;
@@ -1173,6 +1115,9 @@ body {
                                                     @include media($xl) {
                                                         margin-bottom: 7px;
                                                     }
+                                                     @include media($md) {
+                                                        margin-bottom: 8px;
+                                                     }
                                                 }
                                             }
                                             strong {
@@ -1188,6 +1133,10 @@ body {
                                                     letter-spacing: 0.165px;
                                                     line-height: 12px;
                                                 }
+                                                @include media($md){
+                                                    min-height: 48px;
+                                                    line-height: 8px;
+                                                }
                                             }
                                         }
                                         
@@ -1199,7 +1148,7 @@ body {
                     &.mobile {
                         display: none;
                         @include media($md){
-                            display: flex;
+                          // display: flex;
                         }
                         .table-column {
                             &.time-column {
@@ -1412,6 +1361,14 @@ body {
                             height: 4px;
                         }
                     }
+                    @include media($md){
+                        top: 21px;
+                        left: auto;
+                        right: -10px;
+                        svg {
+                            height: 3px;
+                        }
+                    }
                 }
                 .slide-item {
                     .image-wrap {
@@ -1544,7 +1501,7 @@ body {
                                 margin-right: 11px;
                             }
                             @include media($md){
-                                margin-right: 23px;
+                                margin-right: 17px;
                             }
                         }
                         &:hover {

@@ -1,6 +1,7 @@
 (function($){
   documentReady();
   mobileNavigation();
+  agendaTabs();
 
   function documentReady() {
     jQuery(document).ready(function () {
@@ -77,6 +78,21 @@
     jQuery('.mobile-navigation a').on('click', () => {
       jQuery('.mobile-navigation').removeClass('active');
       jQuery('body').removeClass('hidden');
+    });
+  }
+
+  function agendaTabs() {
+    console.log('Name: ');
+    jQuery('[data-tab-name]').on('click', function () {
+      var tabName = jQuery(this).data('tab-name');
+      console.log('Name: ' + tabName);
+
+      jQuery('.venues-tab-name').removeClass('active');
+      jQuery(this).addClass('active');
+
+      jQuery('.content-venues').removeClass('active');
+      jQuery('.content-venues').addClass('hide');
+      jQuery('.content-' + tabName).addClass('active');
     });
   }
 

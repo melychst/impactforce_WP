@@ -825,130 +825,17 @@ body {
           position: absolute;
           right: 0px;
           top: -90px; }
+          @media only screen and (max-width: 767px) {
+            body section.agenda .content-wrap .calendar-table .dots-wrap {
+              right: -10px;
+              bottom: -75px;
+              top: auto; } }
           @media only screen and (max-width: 1023px) {
             body section.agenda .content-wrap .calendar-table .dots-wrap svg {
               height: 4px; } }
-        body section.agenda .content-wrap .calendar-table .table-row {
-          margin-bottom: 2px; }
-          body section.agenda .content-wrap .calendar-table .table-row .columns {
-            -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                    justify-content: space-between; }
-          body section.agenda .content-wrap .calendar-table .table-row .content {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
-            border-radius: 54px;
-            border-radius: 59px;
-            border: 1px solid #00B0EB;
-            background: rgba(228, 229, 234, 0.93);
-            height: 43px;
-            color: #00B0EB;
-            font-family: "e-Ukr-bold";
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 700;
-            letter-spacing: 0.6px; }
-            @media only screen and (max-width: 1023px) {
-              body section.agenda .content-wrap .calendar-table .table-row .content {
-                font-size: 12px; } }
-            @media only screen and (max-width: 1023px) {
-              body section.agenda .content-wrap .calendar-table .table-row .content {
-                height: 25px; } }
-            body section.agenda .content-wrap .calendar-table .table-row .content.description {
-              color: #003548;
-              width: 100%;
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 300;
-              letter-spacing: 0.24px;
-              font-family: "e-Ukr-Thin";
-              -webkit-box-pack: left;
-                  -ms-flex-pack: left;
-                      justify-content: left;
-              padding-left: 27px; }
-              @media only screen and (max-width: 1023px) {
-                body section.agenda .content-wrap .calendar-table .table-row .content.description {
-                  font-size: 8px; } }
-          body section.agenda .content-wrap .calendar-table .table-row .time-column {
-            width: 286px; }
-            @media only screen and (max-width: 1023px) {
-              body section.agenda .content-wrap .calendar-table .table-row .time-column {
-                width: 168px; } }
-          body section.agenda .content-wrap .calendar-table .table-row .content-column {
-            width: 922px; }
-            @media only screen and (max-width: 1290px) {
-              body section.agenda .content-wrap .calendar-table .table-row .content-column {
-                width: 700px; } }
-            @media only screen and (max-width: 1023px) {
-              body section.agenda .content-wrap .calendar-table .table-row .content-column {
-                width: 542px; } }
-            body section.agenda .content-wrap .calendar-table .table-row .content-column .venue:first-child {
-              width: 208px; }
-              @media only screen and (max-width: 1290px) {
-                body section.agenda .content-wrap .calendar-table .table-row .content-column .venue:first-child {
-                  width: 300px; } }
-              @media only screen and (max-width: 1023px) {
-                body section.agenda .content-wrap .calendar-table .table-row .content-column .venue:first-child {
-                  width: 208px; } }
-            body section.agenda .content-wrap .calendar-table .table-row .content-column .venue:last-child {
-              width: 326px; }
-              @media only screen and (max-width: 1290px) {
-                body section.agenda .content-wrap .calendar-table .table-row .content-column .venue:last-child {
-                  width: 300px; } }
-              @media only screen and (max-width: 1023px) {
-                body section.agenda .content-wrap .calendar-table .table-row .content-column .venue:last-child {
-                  width: 325px; } }
-          body section.agenda .content-wrap .calendar-table .table-row.title-row {
-            margin-bottom: 22px; }
-            @media only screen and (max-width: 1023px) {
-              body section.agenda .content-wrap .calendar-table .table-row.title-row {
-                margin-bottom: 13px; } }
-            body section.agenda .content-wrap .calendar-table .table-row.title-row .content {
-              background: #00B0EB;
-              color: #FFF;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: normal;
-              letter-spacing: 0.753px;
-              text-transform: uppercase;
-              font-family: "e-Ukr-Bold";
-              height: 35px;
-              border: none; }
-              @media only screen and (max-width: 1023px) {
-                body section.agenda .content-wrap .calendar-table .table-row.title-row .content {
-                  font-size: 10px; } }
-              @media only screen and (max-width: 1023px) {
-                body section.agenda .content-wrap .calendar-table .table-row.title-row .content {
-                  height: 20px; } }
-            body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column {
-              -webkit-box-pack: justify;
-                  -ms-flex-pack: justify;
-                      justify-content: space-between; }
-              body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column .content {
-                width: 354px; }
-                @media only screen and (max-width: 1290px) {
-                  body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column .content {
-                    width: 300px; } }
-                @media only screen and (max-width: 1023px) {
-                  body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column .content {
-                    width: 208px; } }
-                body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column .content:nth-child(2) {
-                  background: #9575CD;
-                  width: 554px; }
-                  @media only screen and (max-width: 1290px) {
-                    body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column .content:nth-child(2) {
-                      width: 394px; } }
-                  @media only screen and (max-width: 1023px) {
-                    body section.agenda .content-wrap .calendar-table .table-row.title-row .content-column .content:nth-child(2) {
-                      width: 325px; } }
+          @media only screen and (max-width: 767px) {
+            body section.agenda .content-wrap .calendar-table .dots-wrap svg {
+              height: 3px; } }
       body section.agenda .content-wrap .calendar-table {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -956,14 +843,14 @@ body {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; }
-        @media only screen and (max-width: 767px) {
-          body section.agenda .content-wrap .calendar-table {
-            display: none; } }
         body section.agenda .content-wrap .calendar-table .table-column.time-column {
           width: 286px; }
           @media only screen and (max-width: 1023px) {
             body section.agenda .content-wrap .calendar-table .table-column.time-column {
               width: 168px; } }
+          @media only screen and (max-width: 767px) {
+            body section.agenda .content-wrap .calendar-table .table-column.time-column {
+              width: 87px; } }
           body section.agenda .content-wrap .calendar-table .table-column.time-column .title-td {
             background: #00B0EB;
             color: #FFF;
@@ -1043,6 +930,9 @@ body {
           @media only screen and (max-width: 1023px) {
             body section.agenda .content-wrap .calendar-table .table-column.venue-column {
               width: 542px; } }
+          @media only screen and (max-width: 767px) {
+            body section.agenda .content-wrap .calendar-table .table-column.venue-column {
+              width: 201px; } }
           body section.agenda .content-wrap .calendar-table .table-column.venue-column .title {
             margin-bottom: 22px; }
             @media only screen and (max-width: 1023px) {
@@ -1088,25 +978,45 @@ body {
               @media only screen and (max-width: 767px) {
                 body section.agenda .content-wrap .calendar-table .table-column.venue-column .title .content {
                   font-size: 7px;
-                  min-height: 23px; } }
+                  letter-spacing: 0.28px;
+                  text-align: center;
+                  padding: 4px 8px; } }
             body section.agenda .content-wrap .calendar-table .table-column.venue-column .title .venue-1 {
               width: 354px;
-              background: #00B0EB; }
+              background: #00B0EB;
+              cursor: pointer; }
               @media only screen and (max-width: 1290px) {
                 body section.agenda .content-wrap .calendar-table .table-column.venue-column .title .venue-1 {
                   width: 300px; } }
               @media only screen and (max-width: 1023px) {
                 body section.agenda .content-wrap .calendar-table .table-column.venue-column .title .venue-1 {
                   width: 208px; } }
+              @media only screen and (max-width: 767px) {
+                body section.agenda .content-wrap .calendar-table .table-column.venue-column .title .venue-1 {
+                  width: 98px; } }
+              @media only screen and (max-width: 767px) {
+                body section.agenda .content-wrap .calendar-table .table-column.venue-column .title .venue-1.active {
+                  border: 1px solid #00B0EB;
+                  background: #FFF;
+                  color: #00B0EB; } }
             body section.agenda .content-wrap .calendar-table .table-column.venue-column .title .venue-2 {
               width: 554px;
-              background: #9575CD; }
+              background: #9575CD;
+              cursor: pointer; }
               @media only screen and (max-width: 1290px) {
                 body section.agenda .content-wrap .calendar-table .table-column.venue-column .title .venue-2 {
                   width: 394px; } }
               @media only screen and (max-width: 1023px) {
                 body section.agenda .content-wrap .calendar-table .table-column.venue-column .title .venue-2 {
                   width: 325px; } }
+              @media only screen and (max-width: 767px) {
+                body section.agenda .content-wrap .calendar-table .table-column.venue-column .title .venue-2 {
+                  width: 98px; } }
+              @media only screen and (max-width: 767px) {
+                body section.agenda .content-wrap .calendar-table .table-column.venue-column .title .venue-2.active {
+                  border: 1px solid #9575CD;
+                  background: #FFF;
+                  color: #9575CD; } }
           body section.agenda .content-wrap .calendar-table .table-column.venue-column .content {
             width: 922px; }
             @media only screen and (max-width: 1290px) {
@@ -1115,6 +1025,9 @@ body {
             @media only screen and (max-width: 1023px) {
               body section.agenda .content-wrap .calendar-table .table-column.venue-column .content {
                 width: 542px; } }
+            @media only screen and (max-width: 767px) {
+              body section.agenda .content-wrap .calendar-table .table-column.venue-column .content {
+                width: 100%; } }
             body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues-none {
               color: #003548;
               width: 100%;
@@ -1162,6 +1075,16 @@ body {
               -webkit-box-pack: justify;
                   -ms-flex-pack: justify;
                       justify-content: space-between; }
+            @media only screen and (max-width: 767px) {
+              body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues .content-venues {
+                display: none;
+                width: 0px; } }
+            body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues .content-venues.hide {
+              display: none;
+              width: 0px; }
+            @media only screen and (max-width: 767px) {
+              body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues .content-venues.active {
+                width: 100%; } }
             body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues .venues-1 {
               width: 350px; }
               @media only screen and (max-width: 1290px) {
@@ -1198,7 +1121,10 @@ body {
                 @media only screen and (max-width: 767px) {
                   body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues .venues-1 .venues-1-td {
                     font-size: 7px;
-                    border-radius: 13px; } }
+                    border-radius: 13px;
+                    line-height: 12px;
+                    min-height: 95px;
+                    padding: 4px 48px 15px 10px; } }
                 body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues .venues-1 .venues-1-td span {
                   display: block; }
                   body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues .venues-1 .venues-1-td span.title {
@@ -1207,6 +1133,9 @@ body {
                     @media only screen and (max-width: 1023px) {
                       body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues .venues-1 .venues-1-td span.title {
                         margin-bottom: 14px; } }
+                    @media only screen and (max-width: 767px) {
+                      body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues .venues-1 .venues-1-td span.title {
+                        margin-bottom: 11px; } }
                 body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues .venues-1 .venues-1-td strong {
                   font-family: "e-Ukr-Bold"; }
             body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues .venues-2 {
@@ -1252,7 +1181,12 @@ body {
                     margin-bottom: 2px; } }
                 @media only screen and (max-width: 767px) {
                   body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues .venues-2 .venues-2-td {
-                    font-size: 7px; } }
+                    font-size: 7px;
+                    min-height: 23px;
+                    padding: 3px 5px 3px 10px;
+                    line-height: 7px;
+                    letter-spacing: 0.07px;
+                    margin-bottom: 2px; } }
                 body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues .venues-2 .venues-2-td span {
                   display: block; }
                   body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues .venues-2 .venues-2-td span.title {
@@ -1261,6 +1195,9 @@ body {
                     @media only screen and (max-width: 1023px) {
                       body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues .venues-2 .venues-2-td span.title {
                         margin-bottom: 7px; } }
+                    @media only screen and (max-width: 767px) {
+                      body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues .venues-2 .venues-2-td span.title {
+                        margin-bottom: 8px; } }
                 body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues .venues-2 .venues-2-td strong {
                   font-family: "e-Ukr-Bold"; }
                 body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues .venues-2 .venues-2-td.bg {
@@ -1273,13 +1210,12 @@ body {
                       border-radius: 11.763px;
                       letter-spacing: 0.165px;
                       line-height: 12px; } }
+                  @media only screen and (max-width: 767px) {
+                    body section.agenda .content-wrap .calendar-table .table-column.venue-column .content.venues .venues-2 .venues-2-td.bg {
+                      min-height: 48px;
+                      line-height: 8px; } }
         body section.agenda .content-wrap .calendar-table.mobile {
           display: none; }
-          @media only screen and (max-width: 767px) {
-            body section.agenda .content-wrap .calendar-table.mobile {
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex; } }
           body section.agenda .content-wrap .calendar-table.mobile .table-column.time-column {
             width: 87px; }
           body section.agenda .content-wrap .calendar-table.mobile .table-column.venue-column {
@@ -1471,6 +1407,13 @@ body {
               left: 196px; }
               body section.speakers .slider-wrap .dots-wrap svg {
                 height: 4px; } }
+          @media only screen and (max-width: 767px) {
+            body section.speakers .slider-wrap .dots-wrap {
+              top: 21px;
+              left: auto;
+              right: -10px; }
+              body section.speakers .slider-wrap .dots-wrap svg {
+                height: 3px; } }
         body section.speakers .slider-wrap .slide-item .image-wrap {
           width: 180px;
           height: 255px;
@@ -1598,7 +1541,7 @@ body {
                   margin-right: 11px; } }
               @media only screen and (max-width: 767px) {
                 body section.speakers .slider-wrap .slider-navigation .slide-arrow.prev-slide {
-                  margin-right: 23px; } }
+                  margin-right: 17px; } }
             body section.speakers .slider-wrap .slider-navigation .slide-arrow:hover svg path {
               fill: #00B0EB;
               -webkit-transition: 0.2s;
