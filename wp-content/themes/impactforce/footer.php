@@ -129,6 +129,9 @@
         </div>                
     </div>
 </footer>
+    <div class="img-background-main">
+        <img src="<?php echo TEMPLATE_DIRECTORY_URI .'/assets/images/background_4_footer.jpg'?>" alt="">
+    </div>
 </main> 
 <?php wp_footer(); ?>
 </body>

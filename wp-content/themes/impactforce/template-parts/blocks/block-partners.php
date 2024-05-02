@@ -1,4 +1,7 @@
 <section id="<?php echo get_field('block_id'); ?>" class="partners">
+    <div class="img-background">
+        <img src="<?php echo TEMPLATE_DIRECTORY_URI .'/assets/images/background_3_partners.png'?>" alt="">
+    </div>
     <div class="container">
         <h2 class="section-title"><?php echo get_field('main_title'); ?></h2>
         <?php 

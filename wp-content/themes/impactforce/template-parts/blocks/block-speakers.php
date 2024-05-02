@@ -1,4 +1,7 @@
 <section id="<?php echo get_field('block_id'); ?>" class="speakers">
+    <div class="img-background">
+        <img src="<?php echo TEMPLATE_DIRECTORY_URI .'/assets/images/background_2_speakers.jpg'?>" alt="">
+    </div>
     <div class="container">
         <h2 class="section-title"><?php echo get_field('main_title'); ?></h2>
         <div class="section-subtitle"><?php echo get_field('sub_title'); ?></div>
