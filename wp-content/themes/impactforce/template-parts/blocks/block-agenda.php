@@ -61,7 +61,7 @@
                 <div class="table-column venue-column">
                     <div class="title venues">
                         <div class="display-flex">
-                            <div data-tab-name="venues-1" class="content venues-tab-name venue-1 active">Venue 1: Main Hall</div>
+                            <div data-tab-name="venues-1" class="content venues-tab-name venue-1 active">Venue 1: <br>Main Hall</div>
                             <div data-tab-name="venues-2" class="content venues-tab-name venue-2">Venue 2: Innovation Hall </div>
                         </div>
                     </div>

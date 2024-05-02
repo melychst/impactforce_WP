@@ -82,18 +82,18 @@
   }
 
   function agendaTabs() {
-    console.log('Name: ');
-    jQuery('[data-tab-name]').on('click', function () {
-      var tabName = jQuery(this).data('tab-name');
-      console.log('Name: ' + tabName);
+    if (jQuery(window).width() < 768) {
+      jQuery('[data-tab-name]').on('click', function () {
+        var tabName = jQuery(this).data('tab-name');
 
-      jQuery('.venues-tab-name').removeClass('active');
-      jQuery(this).addClass('active');
+        jQuery('.venues-tab-name').removeClass('active');
+        jQuery(this).addClass('active');
 
-      jQuery('.content-venues').removeClass('active');
-      jQuery('.content-venues').addClass('hide');
-      jQuery('.content-' + tabName).addClass('active');
-    });
+        jQuery('.content-venues').removeClass('active');
+        jQuery('.content-venues').addClass('hide');
+        jQuery('.content-' + tabName).addClass('active');
+      });
+    }
   }
 
 })(jQuery)

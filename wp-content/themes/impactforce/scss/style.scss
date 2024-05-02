@@ -480,8 +480,9 @@ body {
                         letter-spacing: 0.5px;
                     }
                     @include media($md){
-                        width: 96px;
+                        width: 110px;
                         line-height: 21px;
+                        letter-spacing: 0px;
                     }
                     span {
                         display: block;
@@ -843,6 +844,7 @@ body {
                                     font-size: 7px;
                                     min-height: 23px;
                                     line-height: 7px;
+                                    padding: 4px 5px;
                                 }
                             }                              
                         }
@@ -863,7 +865,7 @@ body {
                                     margin-bottom: 13px;
                                 }
                                 @include media($md) {
-                                    margin-bottom: 16px;
+                                    margin-bottom: 18px;
                                 }
                                 .display-flex {
                                     justify-content: space-between;
@@ -892,10 +894,11 @@ body {
                                         min-height: 19px;
                                     }           
                                     @include media($md) { 
-                                        font-size: 7px;
-                                        letter-spacing: 0.28px;
+                                        font-size: 6px;
+                                        letter-spacing: 0px;
                                         text-align: center;
-                                        padding: 4px 8px;
+                                        padding: 2px 4px;
+                                        line-height: 8px;
                                     } 
                                 }
                                 .venue-1 {
@@ -917,6 +920,12 @@ body {
                                             background: #FFF;
                                             color: #00B0EB;
                                         }
+                                    }
+                                    br {
+                                        display: none; 
+                                         @include media($md){
+                                            display: block;
+                                         }
                                     }
                                 }
                                 .venue-2 {
@@ -1007,7 +1016,8 @@ body {
                                         }
                                         &.active {
                                             @include media($md){
-                                                width: 100%;                                                
+                                                width: 100%;
+                                                display: block;                                                
                                             }
                                         }
                                     }
