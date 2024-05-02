@@ -1793,15 +1793,12 @@ body {
           @media only screen and (max-width: 1023px) {
             body section.partners .partners-wrap .logo-item {
               width: 105px;
-              height: 38px;
               font-size: 8px;
               letter-spacing: 0.7px;
               margin-bottom: 18px; } }
           @media only screen and (max-width: 767px) {
             body section.partners .partners-wrap .logo-item {
               width: 86px;
-              height: 32px;
-              border-radius: 18px;
               font-size: 6.728px;
               letter-spacing: 0.606px;
               margin-bottom: 11px; } }

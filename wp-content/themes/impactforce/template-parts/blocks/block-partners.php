@@ -1,3 +1,4 @@
+<?php if( get_field('show_section') ): ?>
 <section id="<?php echo get_field('block_id'); ?>" class="partners">
     <div class="img-background">
         <img src="<?php echo TEMPLATE_DIRECTORY_URI .'/assets/images/background_3_partners.png'?>" alt="">
@@ -34,3 +35,4 @@
         ?>
     </div>
 </section>
+<?php endif; ?>

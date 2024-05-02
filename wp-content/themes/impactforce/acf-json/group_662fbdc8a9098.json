@@ -3,6 +3,33 @@
     "title": "Speakers",
     "fields": [
         {
+            "key": "field_66336075f8581",
+            "label": "Show section",
+            "name": "show_section",
+            "aria-label": "",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "show": "Show section"
+            },
+            "default_value": [
+                "show"
+            ],
+            "return_format": "value",
+            "allow_custom": 0,
+            "layout": "vertical",
+            "toggle": 0,
+            "save_custom": 0,
+            "custom_choice_button_text": "Add new choice"
+        },
+        {
             "key": "field_6630ab4c80199",
             "label": "Block ID",
             "name": "block_id",
@@ -255,5 +282,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1714467516
+    "modified": 1714643169
 }

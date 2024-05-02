@@ -1,3 +1,4 @@
+<?php if( get_field('show_section') ): ?>
 <section id="<?php echo get_field('block_id'); ?>" class="art">
     <div class="container">
         <div class="columns display-flex">
@@ -23,3 +24,4 @@
         </div>
     </div>
 </section>
+<?php endif; ?>

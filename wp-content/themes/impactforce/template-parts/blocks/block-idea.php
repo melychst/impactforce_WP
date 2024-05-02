@@ -1,3 +1,4 @@
+<?php if( get_field('show_section') ): ?>
 <section id="<?php echo get_field('block_id'); ?>" class="idea">
     <div class="container">
         <div class="content-wrap">
@@ -27,3 +28,4 @@
         </div>
     </div>
 </section>
+<?php endif; ?>

@@ -1,3 +1,4 @@
+<?php if( get_field('show_section') ): ?>
 <section id="<?php echo get_field('block_id'); ?>" class="agenda">
     <div class="container">
         <h2 class="section-title"><?php echo get_field('main_title'); ?></h2>
@@ -118,3 +119,4 @@
         </div>
     </div>
 </section>
+<?php endif; ?>
